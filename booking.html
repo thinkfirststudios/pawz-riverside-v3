@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Bookings — Pawz Riverside | Riverside, CA</title>
+  <meta name="description" content="Book pet sitting, pet taxi, and dog walking services online with Pawz Riverside in Riverside, CA." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Calendar Appointment Scheduling -->
+  <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo-wrapper">
+      <a href="index.html" class="nav-logo-link">
+        <img src="images/Pawz_Riverside_Logo.jpg" alt="Pawz Riverside" class="nav-logo-img" />
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="booking.html" class="active">Online Bookings</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+    <a href="booking.html" class="btn-book">Book Now</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="services.html">Services</a>
+    <a href="booking.html" class="active">Online Bookings</a>
+    <a href="about.html">About Us</a>
+    <a href="booking.html" class="btn-book-mobile">Book Now</a>
+  </div>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <div class="page-header">
+    <p class="section-label" style="color:rgba(255,255,255,0.5); margin-bottom:10px;">Reserve Your Spot</p>
+    <h1>Online Appointments</h1>
+    <div class="amber-divider"></div>
+  </div>
+
+  <!-- ===== INLINE CALENDAR ===== -->
+  <section class="section-white" style="padding:72px 48px;">
+    <div class="section-inner">
+      <p class="section-label" style="text-align:center; margin-bottom:12px;">Schedule Online</p>
+      <h2 style="font-size:28px; font-weight:800; color:var(--ocean-blue); text-align:center; letter-spacing:-0.02em; margin-bottom:12px;">Pick a time that works for you</h2>
+      <p style="text-align:center; font-size:15px; color:var(--navy); opacity:0.7; max-width:480px; margin:0 auto 40px;">Browse available slots and book your appointment directly — no back and forth needed.</p>
+      <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2RbpnjG40zxw4EBDXT9ttQLEKkoMM59OAylSq1pvJFELQc70JxSypb1LYw-XjjIzvBGoeb9-4y?gv=true" style="border:0; border-radius:8px;" width="100%" height="600" frameborder="0"></iframe>
+    </div>
+  </section>
+
+  <!-- ===== BOOKING CARDS ===== -->
+  <section class="section-mist">
+    <div class="section-inner">
+      <p style="text-align:center; font-size:16px; color:var(--navy); opacity:0.72; max-width:560px; margin:0 auto 48px;">
+        Choose a service below to get started. After selecting, you'll be guided to our contact form to confirm your booking details.
+      </p>
+
+      <div class="booking-grid">
+
+        <div class="booking-card fade-up">
+          <span class="booking-badge">12 hrs</span>
+          <h3>In-Home Sitting</h3>
+          <p class="booking-price">From $85</p>
+          <a href="contact.html" class="btn-book-card">Book</a>
+        </div>
+
+        <div class="booking-card fade-up" style="transition-delay:0.08s;">
+          <span class="booking-badge">1 hr</span>
+          <h3>Pet Taxi Service</h3>
+          <p class="booking-price">From $25</p>
+          <a href="contact.html" class="btn-book-card">Book</a>
+        </div>
+
+        <div class="booking-card fade-up" style="transition-delay:0.16s;">
+          <span class="booking-badge">20 mins</span>
+          <h3>Drop-In Visit</h3>
+          <p class="booking-price">From $20</p>
+          <a href="contact.html" class="btn-book-card">Book</a>
+        </div>
+
+        <div class="booking-card fade-up" style="transition-delay:0.24s;">
+          <span class="booking-badge">30 mins</span>
+          <h3>Standard Walk</h3>
+          <p class="booking-price">From $25</p>
+          <a href="contact.html" class="btn-book-card">Book</a>
+        </div>
+
+        <div class="booking-card fade-up" style="transition-delay:0.32s;">
+          <span class="booking-badge">1 hr</span>
+          <h3>Dog Walking</h3>
+          <p class="booking-price">From $25</p>
+          <a href="contact.html" class="btn-book-card">Book</a>
+        </div>
+
+        <div class="booking-card fade-up" style="transition-delay:0.4s; border:2px dashed #D0E4F5; box-shadow:none; background:rgba(235,243,251,0.5); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;">
+          <div style="color:var(--sky-blue); margin-bottom:14px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="36" height="36" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          </div>
+          <h3 style="font-size:16px; color:var(--ocean-blue); margin-bottom:8px;">Custom Package</h3>
+          <p style="font-size:13px; color:var(--navy); opacity:0.7; line-height:1.6; margin-bottom:18px;">Multi-pet, long-term, or recurring needs? Let's talk.</p>
+          <a href="contact.html" class="btn-book-card">Contact Us</a>
+        </div>
+
+      </div>
+
+      <p style="text-align:center; font-size:13px; color:var(--navy); opacity:0.6; margin-top:32px; font-style:italic;">
+        Add-on: +$10 per additional pet on most services. Prices may vary for holidays or travel outside the Riverside area.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="section-mist" style="padding-top:72px; padding-bottom:72px;">
+    <div class="section-inner">
+      <p class="section-label" style="text-align:center; margin-bottom:12px;">How It Works</p>
+      <h2 style="font-size:30px; font-weight:800; color:var(--ocean-blue); text-align:center; letter-spacing:-0.02em; margin-bottom:48px;">Simple from start to finish</h2>
+
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:32px;">
+        <div class="fade-up" style="text-align:center;">
+          <div style="width:52px; height:52px; background:var(--ocean-blue); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 18px; color:var(--white); font-weight:800; font-size:20px;">1</div>
+          <h4 style="font-size:16px; font-weight:700; color:var(--ocean-blue); margin-bottom:8px;">Choose a Service</h4>
+          <p style="font-size:14px; color:var(--navy); opacity:0.8; line-height:1.65;">Pick the service that fits your pet's needs and your schedule from the cards above.</p>
+        </div>
+        <div class="fade-up" style="text-align:center; transition-delay:0.12s;">
+          <div style="width:52px; height:52px; background:var(--ocean-blue); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 18px; color:var(--white); font-weight:800; font-size:20px;">2</div>
+          <h4 style="font-size:16px; font-weight:700; color:var(--ocean-blue); margin-bottom:8px;">Tell Us About Your Pet</h4>
+          <p style="font-size:14px; color:var(--navy); opacity:0.8; line-height:1.65;">Fill out the contact form with your pet's profile, requested dates, and any special instructions.</p>
+        </div>
+        <div class="fade-up" style="text-align:center; transition-delay:0.24s;">
+          <div style="width:52px; height:52px; background:var(--ocean-blue); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 18px; color:var(--white); font-weight:800; font-size:20px;">3</div>
+          <h4 style="font-size:16px; font-weight:700; color:var(--ocean-blue); margin-bottom:8px;">We Confirm & Show Up</h4>
+          <p style="font-size:14px; color:var(--navy); opacity:0.8; line-height:1.65;">We'll confirm your booking within 24 hours. Then we take it from there — reliably, lovingly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PAYMENT OPTIONS ===== -->
+  <section class="payment-section">
+    <h2>Payment Options</h2>
+    <p>We accept major credit cards, Venmo, Zelle, and cash.</p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Pawz Riverside</h3>
+          <p>Serving Riverside and Corona</p>
+        </div>
+        <div class="footer-links">
+          <p class="footer-col-title">Quick Links</p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Follow Us</p>
+          <div class="social-icons">
+            <div style="display:flex; flex-direction:column; align-items:center; gap:6px;">
+              <a href="#" class="social-icon" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+              </a>
+              <span style="font-size:10px; color:rgba(255,255,255,0.45); letter-spacing:0.06em; text-transform:uppercase;">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Pawz Riverside. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

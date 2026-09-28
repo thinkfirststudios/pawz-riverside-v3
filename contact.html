@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Pawz Riverside | Riverside, CA</title>
+  <meta name="description" content="Get in touch with Pawz Riverside for pet sitting, pet taxi, and dog walking in Riverside, CA. We respond within 24 hours." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo-wrapper">
+      <a href="index.html" class="nav-logo-link">
+        <img src="images/Pawz_Riverside_Logo.jpg" alt="Pawz Riverside" class="nav-logo-img" />
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="booking.html">Online Bookings</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+    <a href="booking.html" class="btn-book">Book Now</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="services.html">Services</a>
+    <a href="booking.html">Online Bookings</a>
+    <a href="about.html">About Us</a>
+    <a href="booking.html" class="btn-book-mobile">Book Now</a>
+  </div>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <div class="page-header">
+    <p class="section-label" style="color:rgba(255,255,255,0.5); margin-bottom:10px;">Get in Touch</p>
+    <h1>Contact Us</h1>
+    <p>Drop us a line!</p>
+    <div class="amber-divider"></div>
+  </div>
+
+  <!-- ===== CONTACT FORM ===== -->
+  <section class="contact-section">
+
+    <div class="contact-form-wrapper fade-up">
+      <form name="contact" method="POST" netlify action="/thank-you.html">
+        <input type="hidden" name="form-name" value="contact" />
+
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-input"
+            placeholder="Your full name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone" class="form-label">Best Way to Reach You</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            class="form-input"
+            placeholder="Phone number or preferred contact method"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email <span style="color:var(--amber);">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input"
+            placeholder="you@example.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="pet_profile" class="form-label">Pet Profile <span style="color:var(--amber);">*</span></label>
+          <textarea
+            id="pet_profile"
+            name="pet_profile"
+            class="form-textarea"
+            placeholder="Tell us about your pet(s): name, breed, age, any special needs"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="services_needed" class="form-label">Services Needed</label>
+          <textarea
+            id="services_needed"
+            name="services_needed"
+            class="form-textarea"
+            placeholder="Which services are you interested in? (e.g., overnight stay, pet taxi, dog walking)"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="requested_dates" class="form-label">Requested Dates</label>
+          <textarea
+            id="requested_dates"
+            name="requested_dates"
+            class="form-textarea"
+            placeholder="When do you need care? Include any recurring schedule or specific dates."
+            style="min-height:88px;"
+          ></textarea>
+        </div>
+
+        <div class="form-checkbox">
+          <input type="checkbox" id="email_list" name="email_list" value="yes" />
+          <label for="email_list">Sign up for our email list for updates, promotions, and more.</label>
+        </div>
+
+        <button type="submit" class="btn-submit">Send</button>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- ===== CONTACT INFO STRIP ===== -->
+  <section class="section-white" style="padding:56px 48px; text-align:center;">
+    <div class="section-inner">
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:32px; max-width:860px; margin:0 auto;">
+        <div class="fade-up">
+          <div style="width:48px; height:48px; background:var(--mist); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 14px; color:var(--ocean-blue);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h4 style="font-size:14px; font-weight:700; color:var(--ocean-blue); margin-bottom:6px;">Location</h4>
+          <p style="font-size:13.5px; color:var(--navy); opacity:0.75; line-height:1.6;">Riverside and Corona</p>
+        </div>
+        <div class="fade-up" style="transition-delay:0.1s;">
+          <div style="width:48px; height:48px; background:var(--mist); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 14px; color:var(--ocean-blue);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4 style="font-size:14px; font-weight:700; color:var(--ocean-blue); margin-bottom:6px;">Response Time</h4>
+          <p style="font-size:13.5px; color:var(--navy); opacity:0.75; line-height:1.6;">We reply within<br>24 hours</p>
+        </div>
+        <div class="fade-up" style="transition-delay:0.2s;">
+          <div style="width:48px; height:48px; background:var(--mist); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 14px; color:var(--ocean-blue);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.92 2.18 2 2 0 012.92 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <h4 style="font-size:14px; font-weight:700; color:var(--ocean-blue); margin-bottom:6px;">Serving</h4>
+          <p style="font-size:13.5px; color:var(--navy); opacity:0.75; line-height:1.6;">Dogs &amp; cats only<br>All ages welcome</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Pawz Riverside</h3>
+          <p>Serving Riverside and Corona</p>
+        </div>
+        <div class="footer-links">
+          <p class="footer-col-title">Quick Links</p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Follow Us</p>
+          <div class="social-icons">
+            <div style="display:flex; flex-direction:column; align-items:center; gap:6px;">
+              <a href="#" class="social-icon" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+              </a>
+              <span style="font-size:10px; color:rgba(255,255,255,0.45); letter-spacing:0.06em; text-transform:uppercase;">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Pawz Riverside. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
